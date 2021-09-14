@@ -1,7 +1,7 @@
 <h1>Login</h1>
 
 <form  method="POST">
-    {% csrf_token %}
+    {% csrf_token %} <!-- this to prevent cross-site request forgery -->
     {{form.as_p}}
     <input type="submit" name="" value="Login">
 
